@@ -629,54 +629,54 @@ Err(e) => {
 flowchart TD
     USER[User Request] --> CLARIFY
 
-    subgraph CLARIFY[Phase 1: Clarification]
-        A1[@clarifier]
+    subgraph CLARIFY["Phase 1: Clarification"]
+        A1["@clarifier"]
     end
 
     CLARIFY --> RESEARCH
 
-    subgraph RESEARCH[Phase 2: Research]
-        A2[@researcher]
-        A3[@logic]
+    subgraph RESEARCH["Phase 2: Research"]
+        A2["@researcher"]
+        A3["@logic"]
     end
 
     RESEARCH --> PLAN
 
-    subgraph PLAN[Phase 3: Planning]
-        A4[@commander]
-        A5[@planner]
-        A6[@tracker]
+    subgraph PLAN["Phase 3: Planning"]
+        A4["@commander"]
+        A5["@planner"]
+        A6["@tracker"]
     end
 
     PLAN --> DESIGN
 
-    subgraph DESIGN[Phase 4: Design]
-        A7[@architect]
+    subgraph DESIGN["Phase 4: Design"]
+        A7["@architect"]
     end
 
     DESIGN --> BUILD
 
-    subgraph BUILD[Phase 5: Build Loop]
-        A8[@implementer]
-        A9[@reviewer]
+    subgraph BUILD["Phase 5: Build Loop"]
+        A8["@implementer"]
+        A9["@reviewer"]
         A8 --> A9
         A9 -->|REJECTED| A8
     end
 
     BUILD --> QUALITY
 
-    subgraph QUALITY[Phase 6: Quality]
-        A10[@tester]
-        A11[@security]
-        A12[@debugger]
+    subgraph QUALITY["Phase 6: Quality"]
+        A10["@tester"]
+        A11["@security"]
+        A12["@debugger"]
     end
 
     QUALITY --> FINAL
 
-    subgraph FINAL[Phase 7: Finalize]
-        A13[@refactorer]
-        A14[@documenter]
-        A15[@reviewer final]
+    subgraph FINAL["Phase 7: Finalize"]
+        A13["@refactorer"]
+        A14["@documenter"]
+        A15["@reviewer final"]
     end
 
     FINAL --> DONE[Complete]
