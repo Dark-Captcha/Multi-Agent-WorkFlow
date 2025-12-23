@@ -44,10 +44,10 @@ Each phase requires explicit user approval before proceeding.
 
 ## Usage
 
-Copy the `.agent/` folder to your project root:
+Copy the protocol files to your project root:
 
 ```bash
-cp -r .agent/ /path/to/your/project/
+cp AGENTS.md AI-WORKFLOW.md -r languages/ /path/to/your/project/
 ```
 
 Configure your AI assistant to read these files as system context.
